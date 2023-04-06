@@ -6,9 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     /* Normalmente esses dados vem do layout da aplicação no Figma */
     :root {
         --red: #e52e4d;
-        --blue-light: rgb(23, 162, 184);
+        --blue-light: #749cd4;
         --green: #33cc95;
-        --blue: rgb(40, 61, 124);
+        --blue: #194eb2;
 
         --text-title: #363f5f;
         --text-body: #969cb3;

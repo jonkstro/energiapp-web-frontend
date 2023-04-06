@@ -15,9 +15,9 @@ export function Header({ onOpenNewDeviceModal }: HeaderProps) {
       <Container>
         <Content>
           <div>
-            <img src={logoImg} alt="dt money" />
+            <img src={logoImg} alt="logo" />
             <h3>EnergiApp</h3>
-            <LogoutButton/>
+            <LogoutButton />
           </div>
           <button className="button" type="button" onClick={onOpenNewDeviceModal}>
             Novo Dispositivo

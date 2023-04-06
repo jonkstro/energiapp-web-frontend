@@ -6,6 +6,10 @@ import Activate from "./pages/Auth/Activate/[...index]";
 import Forgot from "./pages/Auth/Forgot";
 import ResetPass from "./pages/Auth/ResetPass/[...index]";
 
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "jquery/dist/jquery.min.js";
+
 export default function App() {
   return (
     <BrowserRouter>
