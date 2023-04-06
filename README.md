@@ -1,46 +1,31 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# EnergiApp - Controle o seu consumo na palma da sua mão
 
-## Available Scripts
+O EnergiApp é um site de gestão de consumo de energia que possibilita aos clientes monitorar seu consumo em tempo real. Para isso, o site utiliza um gadget chamado NodeMCU, que é conectado ao medidor de energia e envia os dados para um banco de dados através do protocolo PIMA. Os clientes podem acessar seus dados de consumo em tempo real por meio de uma API.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+-   Monitoramento em tempo real do consumo de energia
+-   Histórico de consumo
+-   Análise de tendências de consumo
+-   Configuração de alertas de consumo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   Django Rest Framework
+-   ESP8266 - NodeMCU
+-   React Js
 
-### `npm test`
+## Como usar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de utilizar o EnergiApp, é necessário ter o NodeMCU configurado para enviar dados do medidor de energia através do protocolo PIMA.
 
-### `npm run build`
+Para iniciar a utilizar o EnergiApp, siga os seguintes passos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  Entre no site.
+    
+2.  Crie seu login e senha.
+    
+3.  Coloque o número de série do seu NodeMCU (Vem na caixinha).
+    
+4.  Entre no seu dispositivo cadastrado e já será possível ver o seu consumo em tempo real.
