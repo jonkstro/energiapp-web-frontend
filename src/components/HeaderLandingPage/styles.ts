@@ -3,13 +3,15 @@ import styled from "styled-components";
 export const Container = styled.header`
     background: none; 
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     /* H4 ENERGIAPP */
-    .fw-bolder {
+    .logo-text-bolder {
         font-weight: 600 !important;
     }
 
-    .fs-1 {
-        color: var(--blue);
+    .logo-text {
+        color: #0444ab;
         font-size: calc(1.3rem + .6vw) !important;
     }
     /* H4 ENERGIAPP */
@@ -50,7 +52,7 @@ export const Container = styled.header`
         margin-left: 18px;   
     }
     .btn-cadastro {
-        background-color: var(--blue);
+        background-color: #0444ab;
         width: 100%;
         margin: 0 0 16px !important;
         text-align: center;
@@ -62,7 +64,7 @@ export const Container = styled.header`
 
 export const Navbar = styled.nav`
     /* NAVBAR ICONE SANDUICHE */
-    max-width: 1600px;
+    
     background-color: var(--background);
     z-index:999;
     .btnMenu {
@@ -88,7 +90,7 @@ export const Navbar = styled.nav`
     .bar3 {
         width: 35px;
         height: 5px;
-        background-color: #5e5df0;
+        background-color: #0444ab;
         margin: 5px 0;
         transition: 0.4s;
     }

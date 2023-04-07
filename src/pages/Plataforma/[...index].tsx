@@ -10,8 +10,8 @@ export default function Plataforma() {
 
   // REDIRECIONA PARA PLATAFORMA CASO O USUÁRIO ESTEJA LOGADO
   const navigate = useNavigate();
-  useEffect(()=>{
-    if (!localStorage.getItem("token")){
+  useEffect(() => {
+    if (!localStorage.getItem("token")) {
       navigate("/logar");
       alert('faça login pra continuar');
     }

@@ -36,6 +36,7 @@ export function Auth() {
     numberValidated
   } = useAuth();
 
+  
 
   // criando as variáveis de estado
   const [authMode, setAuthMode] = useState("signin");

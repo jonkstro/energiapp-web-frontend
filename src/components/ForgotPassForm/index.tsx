@@ -36,7 +36,7 @@ export function ForgotPassForm() {
         <AuthFormContent>
           <h3 className="Auth-form-title">Resetar Senha</h3>
           <br />
-          <div className="text-center">
+          <div className="">
             Esqueceu sua senha?<br /> Não se preocupe, lhe enviaremos um e-mail para resetar ela.
           </div>
           <Grid container spacing={0}>

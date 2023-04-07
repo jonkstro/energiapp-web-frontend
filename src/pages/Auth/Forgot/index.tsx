@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 export default function Forgot() {
   // REDIRECIONA PARA PLATAFORMA CASO O USUÁRIO ESTEJA LOGADO
   const navigate = useNavigate();
-  useEffect(()=>{
-    if (localStorage.getItem("token")){
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
       navigate("/");
     }
   }, []);

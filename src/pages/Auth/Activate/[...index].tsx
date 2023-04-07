@@ -16,11 +16,11 @@ export default function Activate() {
   // chamada da API de ativação do usuário
   const { uid, token } = useParams();
 
-  useEffect(()=>{
+  useEffect(() => {
     activate();
   }, []);
 
-  const notify = ()=> toast.success('Cadastrado !', {
+  const notify = () => toast.success('Cadastrado !', {
     position: toast.POSITION.TOP_CENTER,
     toastId: 'success1',
   });
@@ -29,18 +29,18 @@ export default function Activate() {
   const { activateUser } = useAuth();
 
   // função sleep pra esperar sumir o notify e só então excluir
-  const sleep = (ms:number) => new Promise(
+  const sleep = (ms: number) => new Promise(
     resolve => setTimeout(resolve, ms)
   );
 
-  async function redirect(){
+  async function redirect() {
     await sleep(5000);
     navigate('/logar');
   }
 
   async function activate() {
     await activateUser({
-      uid, 
+      uid,
       token
     });
     notify();
@@ -53,10 +53,10 @@ export default function Activate() {
       <h3>token {token}</h3> */}
       <HeaderLogin />
       {/* body da página com redirecionamento e toast message de ok, ativado */}
-      <div style={{textAlign:'center', backgroundColor:'white', marginTop:'-10rem'}}>
+      <div style={{ textAlign: 'center', backgroundColor: 'white', marginTop: '-10rem' }}>
         <h1>Parabéns, você acaba de ativar sua conta!!!</h1>
         <h3>Estamos lhe redirecionando para que faça seu login</h3>
-        <img style={{maxWidth:'100%', padding:0}} src={successImg} alt="" />
+        <img style={{ maxWidth: '100%', padding: 0 }} src={successImg} alt="" />
       </div>
       <GlobalStyle />
     </>
