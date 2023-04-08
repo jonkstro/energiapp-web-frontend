@@ -5,6 +5,7 @@ export const Container = styled.header`
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+
     /* H4 ENERGIAPP */
     .logo-text-bolder {
         font-weight: 600 !important;
