@@ -15,7 +15,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 export function BodyLandingPage() {
     return (
         <Container>
-            <Content className="section1">
+            <Content id="section1">
                 <h1>Bem vindo ao EnergiApp</h1>
                 <h2>A gestão do seu consumo na palma da sua mão</h2>
                 <p>Descubra como diminuir em até 30% o preço da sua conta de energia através de gestão do seu consumo de forma sustentável</p>
@@ -27,7 +27,7 @@ export function BodyLandingPage() {
                     </a>
                 </div>
             </Content>
-            <Content className="section2">
+            <Content id="section2">
                 <div className="div-sobre-section">
                     <img src={about} alt="raio verde" />
                     <h3 className="title-sobre-section">Sobre</h3>
@@ -66,7 +66,7 @@ export function BodyLandingPage() {
                 </div>
 
             </Content>
-            <Content className="section3" style={{ padding: 0, maxWidth: "100%" }}>
+            <Content id="section3" style={{ padding: 0, maxWidth: "100%" }}>
                 <div className="div-demo-section">
                     <div className="div-sobre-section">
                         <img src={getDemo} alt="bandeira branca em volta de circulo laranja" />
@@ -84,35 +84,16 @@ export function BodyLandingPage() {
                     </div>
                 </div>
             </Content >
-            <Content className="section4">
-                    <h1>PRODUTOS</h1>
-                    <h1>PRODUTOS</h1>
-                    <h1>PRODUTOS</h1>
-                    <h1>PRODUTOS</h1>
-                    <h1>PRODUTOS</h1>
+            <Content id="section4">
+                <h1>PRODUTOS</h1>
+                <h1>PRODUTOS</h1>
+                <h1>PRODUTOS</h1>
+                <h1>PRODUTOS</h1>
+                <h1>PRODUTOS</h1>
             </Content>
 
-            <Content className="section5" style={{ padding: 0, maxWidth: "100%", display: "block" }}>
+            <Content id="section5" style={{ padding: 0, maxWidth: "100%", display: "block" }}>
                 <div className="div-contato">
-                    <div className="col">
-                        <div style={{margin:"1rem"}}>
-                            <CheckCircleIcon style={{marginRight: "1rem"}}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Conheça nossos planos</a>
-                        </div>
-                        <div style={{margin:"1rem"}}>
-                            <CheckCircleIcon style={{marginRight: "1rem"}}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Planos Customizáveis</a>
-                        </div>
-                        <div style={{margin:"1rem"}}>
-                            <CheckCircleIcon style={{marginRight: "1rem"}}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Seus dados seguros</a>
-                        </div>
-                        <div style={{margin:"1rem"}}>
-                            <CheckCircleIcon style={{marginRight: "1rem"}}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Sem propragandas</a>
-                        </div>
-                        
-                    </div>
                     <div className="col">
                         <div className="div-contato-section">
                             <img src={logoImg} alt="logo da energiapp" />
@@ -120,7 +101,7 @@ export function BodyLandingPage() {
 
                         </div>
                         <span>Todos direitos reservados</span>
-                        <div className="div-contato-section" style={{justifyContent:"center", alignContent:"center"}}>
+                        <div className="div-contato-section" style={{ justifyContent: "center", alignContent: "center" }}>
                             <a href="#">
                                 <img src={facebook} alt="facebook" />
                             </a>
@@ -134,6 +115,25 @@ export function BodyLandingPage() {
                                 <img src={linkedin} alt="linkedin" />
                             </a> */}
                         </div>
+                    </div>
+                    <div className="col">
+                        <div style={{ margin: "1rem" }}>
+                            <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
+                            <a className="link-contato" href="#">Conheça nossos planos</a>
+                        </div>
+                        <div style={{ margin: "1rem" }}>
+                            <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
+                            <a className="link-contato" href="#">Planos Customizáveis</a>
+                        </div>
+                        <div style={{ margin: "1rem" }}>
+                            <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
+                            <a className="link-contato" href="#">Seus dados seguros</a>
+                        </div>
+                        <div style={{ margin: "1rem" }}>
+                            <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
+                            <a className="link-contato" href="#">Sem propragandas</a>
+                        </div>
+
                     </div>
                 </div>
             </Content>

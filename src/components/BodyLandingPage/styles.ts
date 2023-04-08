@@ -239,17 +239,22 @@ export const Content = styled.section`
         width: 100%;
         margin-top: 0rem;
         margin-bottom: -10rem;
-        padding: 1rem 0;
+        padding: 3rem 0;
         background: #000;
         color: #fff;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        transition: 1s all;
         @media (max-width: 824px) {
-                display: block;
+            display: block;
+            padding: 8rem 0;
             }
+
+        img:hover {
+            transform: scale(1.1);
+        }
     }    
 
     .div-contato-section {

@@ -23,9 +23,11 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
-
+    
     /* AJustar a fonte conforme tela utilizada (padrão vem 16px) */
     html {
+        scroll-behavior: smooth;
+        
         @media (max-width: 1080px) {
             font-size: 93.75%; //15px
         }
