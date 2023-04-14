@@ -118,20 +118,21 @@ export function BodyLandingPage() {
                     </div>
                     <div className="col">
                         <div style={{ margin: "1rem" }}>
-                            <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Conheça nossos planos</a>
+                            <a className="link-contato" href="#" style={{fontWeight:600}}>
+                                Conheça nossos planos
+                            </a>
                         </div>
                         <div style={{ margin: "1rem" }}>
                             <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Planos Customizáveis</a>
+                            <span className="link-contato" >Planos Customizáveis</span>
                         </div>
                         <div style={{ margin: "1rem" }}>
                             <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Seus dados seguros</a>
+                            <span className="link-contato" >Seus dados seguros</span>
                         </div>
                         <div style={{ margin: "1rem" }}>
                             <CheckCircleIcon style={{ marginRight: "1rem" }}></CheckCircleIcon>
-                            <a className="link-contato" href="#">Sem propragandas</a>
+                            <span className="link-contato" >Sem propragandas</span>
                         </div>
 
                     </div>

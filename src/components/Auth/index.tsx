@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AuthForm,
   AuthFormContainer,
@@ -12,9 +12,10 @@ import { useAuth } from "../../hooks/useAuth";
 // IMPORTAR ÍCONES DO MATERIAL UI
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import { Loading } from "../Loading";
 
 export function Auth() {
-  
+
   // RECEBENDO VARIÁVEIS DO USEAUTH
   const {
     first_name,
@@ -36,17 +37,21 @@ export function Auth() {
     numberValidated
   } = useAuth();
 
-  
+
 
   // criando as variáveis de estado
   const [authMode, setAuthMode] = useState("signin");
   const [typePas, setTypePas] = useState("password");
   const [typeConf, setTypeConf] = useState("password");
 
+  // função para loading
+  const [removeLoading, setRemoveLoading] = useState(true);
+
   const changeAuthMode = () => {
     setAuthMode(authMode === "signin" ? "signup" : "signin");
     setTypePas("password");
     setTypeConf("password");
+    setRemoveLoading(true);
   };
 
   function handleChangeType() {
@@ -59,21 +64,24 @@ export function Auth() {
 
   // FUNÇÃO QUE ENVIARÁ OS DADOS PARA CADASTRO DE USUÁRIO NO USEAUTH
   async function handleCreateUser() {
+    setRemoveLoading(false);
     await cadastrarUser({
       first_name,
       email,
       password,
     });
+    setRemoveLoading(true);
   }
 
-  
+
   // FUNÇÃO QUE IRÁ ENVIAR OS DADOS PARA FUNÇÃO DE LOGIN NO USEAUTH
   async function handleLoginUser() {
+    setRemoveLoading(false);
     await loginUser({
       email,
       password,
     });
-
+    setRemoveLoading(true);
   }
 
   if (authMode === "signin") {
@@ -90,7 +98,7 @@ export function Auth() {
             <div className="text-center">
               Não tem uma conta ainda?
               <span
-                style={{marginLeft: '0.25rem'}}
+                style={{ marginLeft: '0.25rem' }}
                 className="link-primary"
                 onClick={() => {
                   changeAuthMode();
@@ -152,7 +160,7 @@ export function Auth() {
             </Grid>
             <br />
             <p className="text-center mt-2">
-              <a href="auth/forgot">Esqueceu sua senha?</a> 
+              <a href="auth/forgot">Esqueceu sua senha?</a>
             </p>
           </AuthFormContent>
         </AuthForm>
@@ -173,7 +181,7 @@ export function Auth() {
           <div className="text-center">
             Já tem uma conta cadastrada?{" "}
             <span
-              style={{marginLeft: '0.25rem'}}
+              style={{ marginLeft: '0.25rem' }}
               className="link-primary"
               onClick={() => {
                 changeAuthMode();
@@ -327,7 +335,11 @@ export function Auth() {
               )}
             </div>
             <Grid item xs={12}>
-              <SubmitButton>CADASTRAR</SubmitButton>
+              <SubmitButton>
+                {removeLoading? 'CADASTRAR' : <Loading/>}
+                {/* CADASTRAR */}
+                {/* <Loading/> */}
+              </SubmitButton>
             </Grid>
           </Grid>
           <br />

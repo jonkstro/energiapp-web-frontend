@@ -113,21 +113,21 @@ export function useAuth() {
       setNumberValidated(true);
     } else {
       setNumberValidated(false);
-      notifyErrors("Sua senha não tem números");
+      // notifyErrors("Sua senha não tem números");
     }
     // SPECIAL VALIDATION
     if (special.test(password)) {
       setSpecialValidated(true);
     } else {
       setSpecialValidated(false);
-      notifyErrors("Sua senha não tem caracteres especiais");
+      // notifyErrors("Sua senha não tem caracteres especiais");
     }
     // LENGTH VALIDATION
     if (length.test(password)) {
       setLengthValidated(true);
     } else {
       setLengthValidated(false);
-      notifyErrors("Sua senha não pode ter menos de 8 caracteres");
+      // notifyErrors("Sua senha não pode ter menos de 8 caracteres");
     }
   }
 
@@ -183,7 +183,7 @@ export function useAuth() {
         // ARMAZENAR A TOKEN NO LOCALSTORAGE:
         localStorage.setItem("token", response.data.auth_token);
         console.log("Logado")
-        navigate("/");
+        navigate("/plataforma");
       })
       .catch((error) => {
         console.log(error);
