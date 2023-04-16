@@ -10,6 +10,10 @@ import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import linkedin from "../../assets/linkedin.png";
 
+import img1 from "../../assets/img_inicial1.jpg";
+import img2 from "../../assets/img_inicial2.png";
+import img3 from "../../assets/img_inicial3.png";
+
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export function BodyLandingPage() {
@@ -85,11 +89,24 @@ export function BodyLandingPage() {
                 </div>
             </Content >
             <Content id="section4">
-                <h1>PRODUTOS</h1>
-                <h1>PRODUTOS</h1>
-                <h1>PRODUTOS</h1>
-                <h1>PRODUTOS</h1>
-                <h1>PRODUTOS</h1>
+                <h1>Nosso Produto:</h1>
+                <div style={{margin:'0 auto', maxWidth:'1200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <CheckCircleIcon style={{ color: 'green', padding: 0, margin: '0 1rem 0 0', height: '3rem', width: '3rem' }} />
+                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify' }}>Seu consumo mensal na palma da sua mão</h2>
+                </div>
+                <img style={{ maxWidth: '100%' }} src={img1} alt="Imagem de gráfico de consumo mensal" />
+                <hr />
+                <div style={{margin:'0 auto',maxWidth:'1200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <CheckCircleIcon style={{ color: 'green', padding: 0, margin: '0 1rem 0 0', height: '3rem', width: '3rem' }} />
+                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify' }}>Receba notificações pelo app Telegram através do nosso Bot</h2>
+                </div>
+                <img style={{ maxWidth: '300px', padding:'1rem' }} src={img2} alt="Imagem de gráfico de consumo mensal" />
+                <hr />
+                <div style={{margin:'0 auto',maxWidth:'1200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <CheckCircleIcon style={{ color: 'green', padding: 0, margin: '0 1rem 0 0', height: '3rem', width: '3rem' }} />
+                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify' }}>Acompanhe nossas dicas de redução de consumo a qualquer hora e de qualquer lugar</h2>
+                </div>
+                <img style={{ maxWidth: '100%' }} src={img3} alt="Imagem de gráfico de consumo mensal" />
             </Content>
 
             <Content id="section5" style={{ padding: 0, maxWidth: "100%", display: "block" }}>
@@ -118,7 +135,7 @@ export function BodyLandingPage() {
                     </div>
                     <div className="col">
                         <div style={{ margin: "1rem" }}>
-                            <a className="link-contato" href="#" style={{fontWeight:600}}>
+                            <a className="link-contato" href="#" style={{ fontWeight: 600 }}>
                                 Conheça nossos planos
                             </a>
                         </div>

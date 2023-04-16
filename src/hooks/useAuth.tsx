@@ -99,14 +99,14 @@ export function useAuth() {
       setLowerValidated(true);
     } else {
       setLowerValidated(false);
-      notifyErrors("Sua senha não tem letras minúsculas");
+      // notifyErrors("Sua senha não tem letras minúsculas");
     }
     // UPPER CASE VALIDATION
     if (upper.test(password)) {
       setUpperValidated(true);
     } else {
       setUpperValidated(false);
-      notifyErrors("Sua senha não tem letras maiúsculas");
+      // notifyErrors("Sua senha não tem letras maiúsculas");
     }
     // NUMBER VALIDATION
     if (number.test(password)) {
