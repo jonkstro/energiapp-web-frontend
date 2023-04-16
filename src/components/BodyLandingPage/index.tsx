@@ -92,19 +92,19 @@ export function BodyLandingPage() {
                 <h1>Nosso Produto:</h1>
                 <div style={{margin:'0 auto', maxWidth:'1200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <CheckCircleIcon style={{ color: 'green', padding: 0, margin: '0 1rem 0 0', height: '3rem', width: '3rem' }} />
-                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify' }}>Seu consumo mensal na palma da sua mão</h2>
+                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify', lineHeight:'3rem' }}>Seu consumo mensal na palma da sua mão</h2>
                 </div>
                 <img style={{ maxWidth: '100%' }} src={img1} alt="Imagem de gráfico de consumo mensal" />
                 <hr />
                 <div style={{margin:'0 auto',maxWidth:'1200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <CheckCircleIcon style={{ color: 'green', padding: 0, margin: '0 1rem 0 0', height: '3rem', width: '3rem' }} />
-                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify' }}>Receba notificações pelo app Telegram através do nosso Bot</h2>
+                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify', lineHeight:'3rem' }}>Receba notificações pelo app Telegram através do nosso Bot</h2>
                 </div>
                 <img style={{ maxWidth: '300px', padding:'1rem' }} src={img2} alt="Imagem de gráfico de consumo mensal" />
                 <hr />
                 <div style={{margin:'0 auto',maxWidth:'1200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <CheckCircleIcon style={{ color: 'green', padding: 0, margin: '0 1rem 0 0', height: '3rem', width: '3rem' }} />
-                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify' }}>Acompanhe nossas dicas de redução de consumo a qualquer hora e de qualquer lugar</h2>
+                    <h2 style={{ padding: 0, margin: 0, textAlign:'justify', lineHeight:'3rem' }}>Acompanhe nossas dicas de redução de consumo a qualquer hora e de qualquer lugar</h2>
                 </div>
                 <img style={{ maxWidth: '100%' }} src={img3} alt="Imagem de gráfico de consumo mensal" />
             </Content>
